@@ -9,7 +9,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ['http://localhost:5173'],
+        origin: true,
         methods: ["GET", "POST"]
     }
 });
@@ -24,7 +24,7 @@ const userSocketmap = {}; // userId -> socketId
 io.on("connection", (socket) => {
     const userId = socket.handshake.query.userId;
 
-    if (userId !== "undefine") userSocketmap[userId] = socket.id;
+    if (userId !== "undefined") userSocketmap[userId] = socket.id;
     io.emit("getOnlineUsers", Object.keys(userSocketmap));
 
     socket.on('disconnect', () => {
@@ -36,7 +36,7 @@ io.on("connection", (socket) => {
 
 
 
-export { app, io , server };
+export { app, io, server };
 
 
 

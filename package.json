@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon B/index.js",
     "start": "node B/index.js",
-    "build": "npm install && npm install --prefix F && npm run build --prefix F"
+    "build": "npm install && npm install --prefix ../F && npm run build --prefix ../F"
   },
   "keywords": [],
   "author": "",
