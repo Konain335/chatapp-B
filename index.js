@@ -30,11 +30,11 @@ app.use('/api/message', messageRouter);
 app.use('/api/user', userRouter);
 
 // line 13 Server static files from the React frontend app.
-app.use(express.static(path.join(__dirname, "../F/dist")));
+app.use(express.static(path.join(__dirname, "F/dist")));
 
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, "../F", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "F", "dist", "index.html"));
 });
 
 //config port .env file
