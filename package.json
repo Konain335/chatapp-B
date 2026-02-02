@@ -1,0 +1,29 @@
+{
+  "name": "chatapp-com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon B/index.js",
+    "start": "node B/index.js",
+    "build": "npm install && npm install --prefix F && npm run build --prefix F"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.20.0",
+    "mongoose": "^8.19.2",
+    "nodemon": "^3.1.10",
+    "path": "^0.12.7",
+    "socket.io": "^4.8.1"
+  }
+}
