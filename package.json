@@ -1,17 +1,12 @@
 {
   "name": "chatapp-com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon B/index.js",
-    "start": "node B/index.js",
-    "build": "npm install && npm install --prefix ../F && npm run build --prefix ../F"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^1.13.2",
     "bcryptjs": "^3.0.2",
@@ -22,8 +17,6 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.20.0",
     "mongoose": "^8.19.2",
-    "nodemon": "^3.1.10",
-    "path": "^0.12.7",
     "socket.io": "^4.8.1"
   }
 }
